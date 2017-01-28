@@ -1,4 +1,4 @@
-# igogo-TV https://c0ncept.github.io/igogo-TV/
+# igogo-TV https://public-isbkayrpog.now.sh/
 
 [virtual-dom + spatial](https://github.com/linuxenko/spatial-virtual-dom) + cake proof of concept
 
