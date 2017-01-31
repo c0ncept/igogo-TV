@@ -27,7 +27,7 @@
     "webpack": "^1.12.15"
   },
   "dependencies": {
-    "cakejs2-spatial": "0.0.19",
+    "cakejs2-spatial": "0.0.20",
     "scroll-into-view": "^1.7.1"
   }
 }
