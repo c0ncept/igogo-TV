@@ -1,0 +1,84 @@
+@import './sass/variables.sass'
+
+html,body
+  font-family: 'Ubuntu', sans-serif
+  font-size: 1em
+  height: 100%
+
+*
+  box-sizing: border-box
+  padding: 0px
+  margin: 0px
+
+body
+  overflow: hidden
+  background: $bgColor
+
+\:focus
+  background: $focusColor
+  color: $textColor !important
+  outline: none
+
+.application
+  position: relative
+  height: 100%
+
+a
+  text-decoration: none
+  color: $textColor
+
+.content
+  height: 100%
+  &--start
+    margin-top: 8em
+
+  &--block
+    margin-left: 5em
+    p
+      color: #fff
+      width: 30em
+      margin: 5em 0
+
+  &--wrap
+    position: relative
+
+  &--center
+    margin: 2em
+    text-align: center
+
+  &--title
+    z-index: 6
+    text-transform: uppercase
+    font-weight: normal
+    font-size: 2em
+    position: fixed
+    top: 0.9em
+    left: $menuHiddenSize
+    color: $textColor
+
+  &--header
+    font-weight: normal
+    font-size: 1.6em
+    position: relative
+    color: $textColor
+    margin: 2em 4em
+
+  &_button
+    &--regular
+      display: inline-block
+      font-size: 2em
+      border: 2px solid #828282
+      padding: .5em 1em
+      background: transparent
+      border-radius: 0.2em
+      margin: 0 0.5em
+
+      &:focus
+        border: 2px solid transparent
+        background: $focusColor
+
+
+@import './sass/left-menu.sass'
+@import './sass/home-page.sass'
+@import './sass/cartoons-page.sass'
+@import './sass/film-page.sass'
