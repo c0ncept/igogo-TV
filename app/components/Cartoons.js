@@ -15,6 +15,16 @@ Cream.extend({
   },
 
   onFocus (evt) {
+    evt.preventDefault();
+    evt.stopPropagation();
+
+    scrollIntoView(evt.target, {
+      time: 400,
+      validTarget: (target) => target === this.containerEl,
+      align: {
+        top: 0.5
+      }
+    }, () => evt.target.focus());
   },
 
   createCats (w, hi, num) {
@@ -39,7 +49,7 @@ Cream.extend({
         <LeftMenu />
         <div className="content">
           <h1 className="content--title">Kотофильмы</h1>
-          <div className="cartoons-page">
+          <div className="cartoons-page" ref={(ref) => { this.containerEl = ref; }}>
             <Scrollabl activate="active" animate={true} className="cartoons-page--carousel">
               <div className="nome"></div>
               <div focusable={f} ref={(ref) => { this.startEl = ref; }} onUnfocusx={this.onUnfocus}

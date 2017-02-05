@@ -20,7 +20,7 @@ Cream.extend({
       <div className="application">
         <LeftMenu />
         <div className="content">
-          <div className="content--title">Йа Котэ !!1111</div>
+          <div className="content--title">Йа 111111 Котэ !!1111</div>
 
             <div className="content--start">
               <div className="content--center">

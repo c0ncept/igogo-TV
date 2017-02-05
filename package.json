@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "cakejs2-spatial": "0.0.20",
-    "scroll-into-view": "^1.7.1"
+    "scroll-into-view" : "https://github.com/15lyfromsaturn/scroll-into-view.git"
   }
 }
